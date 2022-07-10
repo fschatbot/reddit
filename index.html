@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Reddit Icon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png"
+		/>
+		<!-- Linking Scripts and Stylesheets -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css"
+		/>
+		<link rel="stylesheet" href="output.css" />
+		<script src="script.js"></script>
+		<title>Reddit Ripoff</title>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9346448941284407" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<div class="options">
+			<div class="Search-Reddit wrapper">
+				<h2 class="title">Subreddit</h2>
+				<div class="relative rounded-lg shadow-sm w-full">
+					<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-auto">
+						<svg
+							class="absolute text-gray-300 h-5 w-5"
+							viewBox="0 0 20 20"
+							fill="currentColor"
+							id="subreddit_submit"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+								clip-rule="evenodd"
+							></path>
+						</svg>
+					</div>
+					<input class="inp" placeholder="Enter you subreddit page here..." id="subreddit" />
+				</div>
+				<button class="more_posts" id="new_posts">Load More Posts...</button>
+			</div>
+			<div class="Sort-Sub wrapper">
+				<h2 class="title">Sort Type</h2>
+				<div class="sort-wrapper">
+					<input type="radio" id="hot" name="sort" value="hot" onclick="PostSort(true)" />
+					<label for="hot" class="option hot">Hot</label>
+					<input type="radio" id="new" name="sort" value="new" onclick="PostSort(false)" />
+					<label for="new" class="option new">New</label>
+				</div>
+			</div>
+			<div class="Filter-Sub wrapper">
+				<h2 class="title">Filter Type</h2>
+				<div class="filter-wrapper">
+					<input
+						type="radio"
+						id="all"
+						name="filter"
+						value="all"
+						onclick="PostFilter('all')"
+						checked
+					/>
+					<label for="all" class="option all">No Filter</label>
+					<input type="radio" id="nsfw" name="filter" value="nsfw" onclick="PostFilter('nsfw')" />
+					<label for="nsfw" class="option nsfw">NSFW posts only</label>
+					<input type="radio" id="sfw" name="filter" value="sfw" onclick="PostFilter('sfw')" />
+					<label for="sfw" class="option sfw">SFW posts only</label>
+				</div>
+			</div>
+		</div>
+		<div class="posts" id="posts">
+			<!-- <div class="post" nsfw="true">
+				<p class="info">Posted by <a>u/reddit</a> 5 hours ago</p>
+				<h2 class="title"><a>Post 1</a><label class="nsfwTag">nsfw</label></h2>
+				<br />
+				<img
+					class="image"
+					src="https://newevolutiondesigns.com/images/freebies/cool-wallpaper-1.jpg"
+				/>
+			</div>
+			<div class="post" nsfw="false">
+				<p class="info">Posted by <a>u/reddit</a> 10 hours ago</p>
+				<h2 class="title"><a>Post 2</a></h2>
+				<br />
+				<img
+					src="https://www.enjpg.com/img/2020/cool-for-boys-4.jpg"
+					alt="Post Image"
+					class="image"
+				/>
+			</div>
+
+			<div class="post hide" nsfw="false">
+				<p class="info">Posted by <a>u/reddit</a> 15 hours ago</p>
+				<h2 class="title"><a>Post 3</a></h2>
+				<br />
+				<img
+					src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Cool-hd-wallpapers-1080p.jpg"
+					alt="Post Image"
+					class="image"
+				/>
+			</div>
+
+			<div class="post" nsfw="true">
+				<p class="info">Posted by <a>u/reddit</a> 20 hours ago</p>
+				<h2 class="title"><a>Post 4</a><label class="nsfwTag">nsfw</label></h2>
+				<br />
+				<img
+					src="https://wallpapertag.com/wallpaper/full/7/c/e/556280-free-cool-dog-backgrounds-1920x1200-smartphone.jpg"
+					alt="Post Image"
+					class="image"
+				/>
+			</div> -->
+		</div>
+	</body>
+</html>
