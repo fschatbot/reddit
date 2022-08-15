@@ -5,39 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Reddit Icon -->
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-16x16.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="96x96"
-			href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-96x96.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="192x192"
-			href="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png"
-		/>
+		<link rel="icon" type="image/png" sizes="16x16" href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="https://www.redditstatic.com/desktop2x/img/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png" />
 		<!-- Linking Scripts and Stylesheets -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css"
-		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css" />
 		<link rel="stylesheet" href="output.css" />
 		<script src="script.js"></script>
 		<title>Reddit Ripoff</title>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9346448941284407" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -46,17 +22,8 @@
 				<h2 class="title">Subreddit</h2>
 				<div class="relative rounded-lg shadow-sm w-full">
 					<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-auto">
-						<svg
-							class="absolute text-gray-300 h-5 w-5"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							id="subreddit_submit"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-								clip-rule="evenodd"
-							></path>
+						<svg class="absolute text-gray-300 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" id="subreddit_submit">
+							<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
 						</svg>
 					</div>
 					<input class="inp" placeholder="Enter you subreddit page here..." id="subreddit" />
@@ -75,14 +42,7 @@
 			<div class="Filter-Sub wrapper">
 				<h2 class="title">Filter Type</h2>
 				<div class="filter-wrapper">
-					<input
-						type="radio"
-						id="all"
-						name="filter"
-						value="all"
-						onclick="PostFilter('all')"
-						checked
-					/>
+					<input type="radio" id="all" name="filter" value="all" onclick="PostFilter('all')" checked />
 					<label for="all" class="option all">No Filter</label>
 					<input type="radio" id="nsfw" name="filter" value="nsfw" onclick="PostFilter('nsfw')" />
 					<label for="nsfw" class="option nsfw">NSFW posts only</label>
@@ -134,5 +94,12 @@
 				/>
 			</div> -->
 		</div>
+
+		<a signature href="https://github.com/fschatbot" target="_blank" rel="noreferrer">
+			Made by FSChatBot
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+			</svg>
+		</a>
 	</body>
 </html>

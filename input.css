@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap");
+
+:root {
+	--font-Lato: "Lato", sans-serif;
+	--font-Nunito: "Nunito", sans-serif;
+	--border-radius: 7px;
+}
+
+body {
+	@apply bg-stone-900 text-white;
+}
+
+.posts {
+	@apply mx-auto mb-5 mt-[12rem]
+	max-w-4xl;
+}
+
+.post {
+	@apply bg-zinc-800 rounded-lg w-full
+	px-10 py-5;
+}
+
+.post + .post:not(.hide) {
+	@apply mt-4;
+}
+
+.post img,
+.post embed,
+.post iframe {
+	@apply rounded-lg max-h-[30rem] object-contain resize mx-auto;
+}
+
+.post .title {
+	@apply font-semibold text-2xl mb-4;
+}
+
+.post[nsfw="true"] img {
+	@apply opacity-10 hover:opacity-100 transition-opacity;
+}
+
+.post .info {
+	@apply text-xs text-white/70;
+}
+
+.post .info a,
+.post .title a {
+	@apply font-semibold cursor-pointer
+	hover:text-white hover:underline hover:underline-offset-1 hover:decoration-sky-500;
+}
+
+.nsfwTag {
+	@apply inline-block mt-1 mx-2 py-1 px-2 text-sm
+	border rounded-md border-red-600 text-red-600
+	hover:bg-red-600 hover:text-white transition-colors;
+}
+
+.hide {
+	@apply hidden;
+}
+
+/* CSS FOR THE OPTIONS MENU */
+
+.options {
+	@apply fixed top-0 left-0 bg-zinc-700 w-full pb-2 px-10
+	flex flex-row justify-between backdrop-blur-md
+	z-50;
+}
+
+.options .wrapper {
+	@apply w-[13rem];
+}
+
+.inp {
+	@apply font-sans block text-sm w-full pl-10 py-2 px-3 rounded-lg outline-none focus:ring-1
+	text-gray-300 bg-gray-800;
+}
+.more_posts {
+	@apply w-full border rounded-lg mt-2 py-2 text-xs font-sans
+	border-white hover:bg-zinc-400 transition-colors;
+}
+
+.options .title {
+	@apply text-center text-xl mb-2;
+}
+
+.options input[type="radio"] {
+	@apply hidden;
+}
+
+.options input[type="radio"] + label {
+	@apply block cursor-pointer w-full text-center text-xs font-semibold mb-2
+	border py-2 rounded-lg font-sans transition;
+}
+
+.options input[type="radio"]:checked + label {
+	@apply bg-sky-500 border-sky-500 scale-105;
+}
+
+/* Signature Code Starts from here!! */
+a[signature] {
+	@apply flex items-center gap-1
+		fixed bottom-4 left-4 text-white py-2.5 px-5
+		bg-white/10 border border-white/20 rounded-md backdrop-blur no-underline
+		hover:bg-white/20 hover:border-white/30;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	transition: background-color 500ms, border-color 500ms;
+}
+
+a[signature] svg {
+	@apply w-5 h-5;
+}
