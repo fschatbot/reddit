@@ -34,7 +34,7 @@ jobs:
           git init
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add index.html scipt.js output.css -f
+          git add index.html script.js output.css -f
           git commit -m "Upgraded till commit: ${{ github.event.commits[0].id }}"
       - name: Push changes
         uses: ad-m/github-push-action@master
